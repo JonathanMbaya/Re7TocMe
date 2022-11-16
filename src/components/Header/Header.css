@@ -1,0 +1,28 @@
+header {
+    background-image: url(../../assets/background-header.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+.headertop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.color-yellow{
+    color:yellow;
+}
+
+button {
+    background-color: yellow;
+    width: 200px ;
+    height: 50px;
+    border: none;
+    border-radius: 0 0 0 50px;;
+}
