@@ -23,7 +23,7 @@
             "Garnissez la pâte de feuilles de brick.",
             "Dans une poële, faîtes chauffer l'huile d'olive à feu moyen et placez-y les croustillants que vous ferez revenir 2 min de chaque côté."
                             ],
-        "photo" : "http://localhost:9000/images/dustcrepe.jpg"
+        "photo" : "http://127.0.0.1:5173/images/dustcrepe.jpg"
     },
     {
         "id"               : 2,
@@ -48,7 +48,7 @@
             "Ficelez-les deux par deux avec de la ficelle de cuisine. Coupez 4 carottes en deux beaux morceaux. Taillez l'un des panais en brunoise (dés de 2mm environ).",
             "À l'aide de la cuillère parisienne, préparez des petites boules avec le panais et les carottes restants. Coupez les navets en deux. Réservez tous les légumes."
                             ],
-        "photo" : "http://localhost:9000/images/bantha-a-l-etouffee.jpg"
+        "photo" : "http://127.0.0.1:5173/images/bantha-a-l-etouffee.jpg"
     },
     {
         "id"               : 3,
@@ -70,7 +70,7 @@
             "Ajoutez du colorant et laissez refroidir à température ambiante.",
             "Dans le blender, déposez la crème glacée au yaourt et le lait bleu. Mixez pendant 1 min et servez bien frais."
                             ],
-        "photo" : "http://localhost:9000/images/blue-milkshake.jpg"
+        "photo" : "http://127.0.0.1:5173/images/blue-milkshake.jpg"
     },
     {
         "id"               : 4,
@@ -92,7 +92,7 @@
             "Déposez le thé dans un bol à fond plat. Versez l'eau minérale chaude (mais non bouillante) dans le bol. Puis, à l'aide du chasen, mélangez énergiquement le thé et l'eau, dans un mouvement allant du bas vers le haut.",
             "Pressez le citron vert et incorporez son jus au thé encore brûlant. Ajoutez le miel et mélangez de nouveau à l'aide d'un chasen."
                             ],
-        "photo" : "http://localhost:9000/images/the-organique-naboo.jpg"
+        "photo" : "http://127.0.0.1:5173/images/the-organique-naboo.jpg"
     },
     {
         "id"               : 5,
@@ -114,7 +114,7 @@
             "Toujours à l'aide du couteau, épluchez les figues et coupez-les en qutre, réservez-les.",
             "Mixez le tout dans un blender et ajoutez le lait d'amande, le miel et le lait froid. Mélangez et servez frais."
                             ],
-        "photo" : "http://localhost:9000/images/jus-jawa.jpg"
+        "photo" : "http://127.0.0.1:5173/images/jus-jawa.jpg"
     },
     {
         "id"               : 6,
@@ -138,7 +138,7 @@
             "Séparez les blancs des jaunes d'oeufs. Faites blanchir les jaunes avec le sucre et incorporez peu à peu le mascarpone. Ajoutez l'arôme de vanille et mélangez.",
             "Battez les blancs en neige ferme avec le sel et incorporez-les à la préparation. Filmez au contact et déposez au réfrigirateur."
                             ],
-        "photo" : "http://localhost:9000/images/galacticake.jpg"
+        "photo" : "http://127.0.0.1:5173/images/galacticake.jpg"
     },
     {
         "id"               : 7,
@@ -165,7 +165,7 @@
             "Portez un grand volume d'eau modérément salée à ébullition et plongez-y les sommités de chou-fleur. Ajoutez le jus de citron et laissez cuire pendant 15 min dans de l'eau bouillante. Égouttez et réservez.",
             "Préchauffez le four à 180°C (th.6) et passez à la préparation de l'appareil à soufflé. Séparez les blancs des jaunes d'oeuf. Dans un grand bol avec une pincée de sel, montez les blancs en neige, réservez-les."
                             ],
-        "photo" : "http://localhost:9000/images/cloud-souffle.jpg"
+        "photo" : "http://127.0.0.1:5173/images/cloud-souffle.jpg"
     },
     {
         "id"               : 8,
@@ -188,7 +188,7 @@
             "Commencez par la cuisson de la viande. Pelez les gousses d'ail, ôtez les germes et écrasez les gousses, puis réservez-les. Rassemblez les feuilles de coriandre les unes sur les autres et ciselez-les. Coupez l'agneau en morceaux de taille moyenne. Dans un faitout, versez l'huile d'olive et faites-la chauffer à feu moyen. Déposez l'agneau dans le faitout, assaisonnez d'une pincée de sel et faites revenir les morceaux jusqu'à ce que toutes les faces soient colorées.",
             "Dès que l'agneau prend une belle couleur, retirez-le du faitout pendant quelques instants. Dans le faitout, déposez l'ail écrasé, le coulis de tomate, l'harissa et mélangez bien. Ajoutez la coriandre et le bouillon de légumes. Déposez le bouquet garni et remettez les morceaux d'agneau dans la préparation. Couvrez et laissez cuire à feu moyen pendant 45 minutes."
                             ],
-        "photo" : "http://localhost:9000/images/dewback-en-ragout.jpg"
+        "photo" : "http://127.0.0.1:5173/images/dewback-en-ragout.jpg"
     },
     {
         "id"               : 9,
@@ -211,6 +211,6 @@
             "Faites fondre le chocolat et le beurre au bain-marie. Dans un saladier, cassez les oeufs et ajoutez le sucre. Mélangez et ajoutez le mélange beurre-chocolat, le piment d'Espelette et la farine.",
             "Enfournez 8 minutes. Servez chaud."
                             ],
-        "photo" : "http://localhost:9000/images/chocolate-lava-cake.jpg"
+        "photo" : "http://127.0.0.1:5173/images/chocolate-lava-cake.jpg"
     }
 ]

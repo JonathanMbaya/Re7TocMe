@@ -8,5 +8,21 @@ h2{
     background-color: rgba(0, 0, 0, 0.68);
 }
 
+.allresult{
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.result-titre{
+    text-align: center;
+}
+
 
 
