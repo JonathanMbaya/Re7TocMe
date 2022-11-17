@@ -1,50 +1,55 @@
-import "./Recette.css";
-import recipe from "../../assets/photos/chocolate-lava-cake.jpg";
-
 function Recette(){
 
 
   return (
 
-<div className="section-result col-12">
+    <div className="section-result">
+    
+    <h2><i class="fa-solid fa-bowl-rice"></i>Nos recettes</h2>
 
-  <div className="card-recette col-md-4 col-sm-6 col-12">
+    <i class="fa-solid fa-filter"></i>
 
-    <img className="img-Recette img-fluid" src={recipe} alt="recipe" />
+        { this.state.recettes.map(recettes => 
 
+        <div className="card-recette allresult col-md-12">
 
-    <div className="details">
-
-      <div className="details-title">
-            
-        <div>
-          <h3>{recettes.titre}</h3>
-        </div>
-
-        </div>
-
-        <div className="details-others">
+            <img className="img-Recette img-fluid" src={recettes.photo} alt="photo de la recette" />
 
             <div>
-                <h4>Durée</h4>
-                <h4>{recettes.tempsPreparation} min</h4>
-            </div>
+                <div className="result-titre">
+                    <h3><i class="fa-solid fa-utensils"></i>{recettes.titre}</h3>
+                </div>
 
-            <div>
-                <h4>Nombre de personnes</h4>
-                <h4>{recettes.personnes}</h4>
-                
-            </div>
+                <div className="allresult">
 
-            <div>
-                <h4>Niveau de difficulté</h4>
-                <h4>{recettes.niveau}</h4>
+                    <div className="details-result">
+                        <h4>Durée</h4>
+                        <p><i class="fa-solid fa-stopwatch"></i>{recettes.tempsPreparation} min</p>
+                        
+                    </div>
+
+                    <div className="details-result">
+                        <h4>Nombre de personnes</h4>
+                        <p><i class="fa-solid fa-person"></i>{recettes.personnes}</p>
+                    </div>
+
+                    <div className="details-result">
+                        <h4>Niveau de difficulté</h4>
+                        <p><i class="fa-solid fa-jedi"></i>{recettes.niveau}</p>
+                        
+                    </div>
+
+                </div>
+
+                <button><i class="fa-solid fa-pencil"></i> Modifier</button>
+                <button> <i class="fa-solid fa-trash"></i> Supprimer</button>
             </div>
 
         </div>
 
-    </div>
-  </div>
+        
+        
+        )}
 
 </div>
 

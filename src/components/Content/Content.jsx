@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./Content.css";
 import axios from 'axios';
 
-
 class Content extends Component{
 
     state = {
@@ -22,37 +21,44 @@ class Content extends Component{
 
             <div className="section-result">
     
-                <h2>Nos recettes</h2>
+                <h2><i className="fa-solid fa-bowl-rice"></i>Nos recettes</h2>
+
+                <i className="fa-solid fa-filter"></i>
 
                     { this.state.recettes.map(recettes => 
 
-                    <div className="col-md-12">
+                    <div key={recettes.id} className="card-recette allresult col-md-12">
 
-                        <img src={recettes.photo} alt="photo de la recette" />
+                        <img className="img-Recette img-fluid" src={recettes.photo} alt="photo de la recette" />
 
                         <div>
                             <div className="result-titre">
-                                <h3>{recettes.titre}</h3>
+                                <h3><i className="fa-solid fa-utensils"></i>{recettes.titre}</h3>
                             </div>
 
                             <div className="allresult">
 
                                 <div className="details-result">
                                     <h4>Durée</h4>
-                                    <p>{recettes.tempsPreparation} min</p>
+                                    <p><i className="fa-solid fa-stopwatch"></i>{recettes.tempsPreparation} min</p>
+                                    
                                 </div>
 
                                 <div className="details-result">
                                     <h4>Nombre de personnes</h4>
-                                    <p>{recettes.personnes}</p>
+                                    <p><i className="fa-solid fa-person"></i>{recettes.personnes}</p>
                                 </div>
 
                                 <div className="details-result">
                                     <h4>Niveau de difficulté</h4>
-                                    <p>{recettes.niveau}</p>
+                                    <p><i className="fa-solid fa-jedi"></i>{recettes.niveau}</p>
+                                    
                                 </div>
 
                             </div>
+
+                            <button><i className="fa-solid fa-pencil"></i> Modifier</button>
+                            <button> <i className="fa-solid fa-trash"></i> Supprimer</button>
                         </div>
 
                     </div>
