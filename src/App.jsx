@@ -13,9 +13,9 @@ import EditRecette from "./components/EditRecette";
           <div>
             <Routes>
                 <Route path='/' element={<Home/>} />
+                <Route path='recette/:id' element={<Recettedetails/>} />
                 <Route path='ajouter-une-recette' element={<AddRecette/>} />
                 <Route path='modifier-la recette' element={<EditRecette/>} />
-                <Route path='recette' element={<Recettedetails/>} />
             </Routes>
           </div>
 

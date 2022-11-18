@@ -1,7 +1,23 @@
-import React, { Component } from 'react';
+import React, {useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import Header from './Header/Header';
+import {getRecetteById} from "./request"
 
 function Recettedetails () {
+
+  const [recette, setRecette] = useState ({});
+  const {id} = useParams();
+
+  useEffect(() => {
+      async function getRecetteLoadById(id){
+          const recette = await getRecetteById (id);
+          setRecette(recette);
+      }
+
+      getRecetteLoadById(id);
+
+  }, []);
+
 
     return (
         <div>
