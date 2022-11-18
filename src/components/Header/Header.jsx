@@ -1,5 +1,7 @@
 import React from "react";
+import {Link } from 'react-router-dom';
 import "./Header.css";
+
 
 function Header() {
 
@@ -7,14 +9,14 @@ function Header() {
         <header>
             <div className="headertop">
                 <div className="container-fluid">
-                    <a href="#">
-                        <h1> <span className="color-yellow"><i className="fa-solid fa-utensils"></i>Rec7</span> | Tocme! </h1>
-                    </a>
+
+                        <h1><Link to={'/'} className="nav-link"> <span className="color-yellow">Rec7</span> Tocme!</Link></h1>
+
                 </div>
 
                 <div>
                     <button>
-                        <p>Ajouter une recette <i className="fa-solid fa-plus"></i></p>
+                        <p><Link to={'/ajouter-une-recette'} className="nav-link">Ajouter une recette <i className="fa-solid fa-plus"></i></Link></p>
                     </button>
                 </div>
             </div>
