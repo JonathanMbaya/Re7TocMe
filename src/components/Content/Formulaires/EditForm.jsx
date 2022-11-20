@@ -3,6 +3,9 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "bootstrap/dist/css/bootstrap.css";
 
+
+// Schema de validation avec Yup
+
 const validationSchema = Yup.object().shape({
   firstName: Yup.string()
     .min(5, "trop petit")
@@ -31,6 +34,8 @@ const validationSchema = Yup.object().shape({
   )
 });
 
+// const pour initialiser la valeur de chaque champ
+
 const initialValues = {
   firstName: "",
   lastName: "",
@@ -39,6 +44,8 @@ const initialValues = {
   confirmPassword: "",
   acceptTerms: false
 };
+
+// const pour récupérer les values de chaque champs dans la console
 
 const handleSubmit = (values) => {
   console.log(values);
@@ -56,63 +63,93 @@ const EditForm = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             {({ resetForm }) => (
+
+              // Formulaire Formik 
+
+
               <Form>
+
                 <div className="form-group mb-3">
                   <label htmlFor="recetteName">Titre de la Recette</label>
+
                   <Field
                     type="text"
                     id="recettteName"
                     name="recetteName"
                     className="form-control"
                   />
+
                   <ErrorMessage
                     name="firstName"
                     component="small"
                     className="text-danger"
                   />
+
                 </div>
+
+
+
                 <div className="form-group mb-3">
+
                   <label htmlFor="recetteDescription">Description de la recette (brief)</label>
+
                   <Field
                     type="text"
                     id="recetteDescription"
                     name="recetteDescription"
                     className="form-control"
                   />
+
                   <ErrorMessage
                     name="lastName"
                     component="small"
                     className="text-danger"
                   />
+
                 </div>
+
+
+
+
                 <div className="form-group mb-3">
+
                   <label htmlFor="levelRecette">Niveau de difficulté</label>
+
                   <Field
                     type="text"
                     id="levelRecette"
                     name="levelRecette"
                     className="form-control"
                   />
+
                   <ErrorMessage
                     name="email"
                     component="small"
                     className="text-danger"
                   />
+
                 </div>
+
                 <div className="form-group mb-3">
+
                   <label htmlFor="password">Nombre de Personnes</label>
+
                   <Field
                     type="password"
                     id="password"
                     name="password"
                     className="form-control"
                   />
+
                   <ErrorMessage
                     name="password"
                     component="small"
                     className="text-danger"
                   />
+
                 </div>
+
+                
                 <div className="form-group mb-3">
                   <label htmlFor="confirmPassword">
                     Temps de préparation (min)

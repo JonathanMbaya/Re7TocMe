@@ -8,6 +8,8 @@ function AddRecette (){
 
     return (
         <div>
+          {/* Affichage des composants de la page pour ajouter une nouvelle recette */}
+
           <Header/>
           <h2 className='container'>Ajouter une recette</h2>
           <AddForm/>

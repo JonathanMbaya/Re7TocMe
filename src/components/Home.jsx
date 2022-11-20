@@ -7,6 +7,8 @@ function Home () {
 
     return (
         <div>
+
+            {/* Affichage des composants de la page d'Accueil */}
             <Header/>
             <Recette/>
             <AddForm/>

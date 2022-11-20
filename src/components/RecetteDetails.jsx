@@ -6,9 +6,15 @@ import TheRecette from './Content/TheRecetteDisplay/TheRecette';
 
 function Recettedetails () {
 
+    // Stocker les données dans un tableau avec useState
 
   const [recette, setRecette] = useState ([]);
+
+  // useParams pour récupérer l'Id de l'élément cliqué
   const {id} = useParams();
+
+
+    // Fonction de chargement de la requête axios à chaque affichage de la page (useEffect) depuis le fichier request.jsx avec pour paramètre id
 
   useEffect(() => {
       async function getRecetteLoadById(id) {
@@ -21,6 +27,8 @@ function Recettedetails () {
 
   return (
 
+
+      // Affichage des données directement depuis le nouveau tableau recette
     <div>
 
       <Header/>
