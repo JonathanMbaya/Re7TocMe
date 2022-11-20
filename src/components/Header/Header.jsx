@@ -10,12 +10,12 @@ function Header() {
             <div className="headertop">
                 <div className="container-fluid">
 
-                        <h1><Link to={'/'} className="nav-link"> <span className="color-yellow">Rec7</span> Tocme!</Link></h1>
+                        <h1><Link to={'/'} className="nav-link"> <span className="color-yellow">Re7</span> Tocme!</Link></h1>
 
                 </div>
 
                 <div>
-                    <button>
+                    <button className="btn-Add">
                         <p><Link to={'/ajouter-une-recette'} className="nav-link">Ajouter une recette <i className="fa-solid fa-plus"></i></Link></p>
                     </button>
                 </div>

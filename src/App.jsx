@@ -1,10 +1,9 @@
 import React from 'react';
-import {Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route, useParams } from 'react-router-dom';
 import Home from "./components/Home"
 import AddRecette from "./components/AddRecette";
 import Recettedetails from "./components/RecetteDetails";
 import EditRecette from "./components/EditRecette";
-
 
 
   function App () {
@@ -13,7 +12,7 @@ import EditRecette from "./components/EditRecette";
           <div>
             <Routes>
                 <Route path='/' element={<Home/>} />
-                <Route path='recette/:id' element={<Recettedetails/>} />
+                <Route path=':titre/:id' element={<Recettedetails/>} />
                 <Route path='ajouter-une-recette' element={<AddRecette/>} />
                 <Route path='modifier-la recette' element={<EditRecette/>} />
             </Routes>

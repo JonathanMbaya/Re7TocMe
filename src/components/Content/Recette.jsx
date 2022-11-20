@@ -1,6 +1,7 @@
 import React, {useEffect,useState} from "react";
 import { getRecettes } from "../request";
 import RecetteSingle from "./RecetteSingle";
+import "./RecetteSingle.css"
 
 
 function Recette () {
@@ -8,7 +9,7 @@ function Recette () {
     const [recettes, setRecettes] = useState ([]);
 
 
-    useEffect(() => {
+    useEffect(() => {   
         async function getRecetteLoad(){
             const recettes = await getRecettes();
             setRecettes(recettes);
@@ -19,21 +20,34 @@ function Recette () {
     }, []);
 
 
+
+
         return (
 
             <div className="section-result">
     
-                <h2>Nos recettes</h2>
+                <h2 className="container">Nos recettes</h2>
 
-                <i className="fa-solid fa-filter"></i>
+                <div className="container btn-filters">
+                    <div className="icon-filter">
+                        <i className="fa-solid fa-filter"></i>
+                    </div>
+                    <button className="btn-filter-one">Par recette </button>
+                    <button  className="btn-filter-one">Par niveau</button>
+                    <button  className="btn-filter-one">Par personnes </button>
+                    <button  className="btn-filter-one">Par temps de prépartaion</button>
+                </div>
 
-                    {recettes.map((recettes, index) => 
+
+            
+                    {recettes.map((recettes) => 
+
 
                     <RecetteSingle 
                     
                     id={recettes.id} 
                     
-                    key={index} 
+                    key={recettes.id} 
                     
                     img={recettes.photo} 
                     
@@ -44,7 +58,7 @@ function Recette () {
                     niveau={recettes.niveau} 
                     
                     duree={recettes.tempsPreparation}/>
-        
+
                     )}
 
             </div>
