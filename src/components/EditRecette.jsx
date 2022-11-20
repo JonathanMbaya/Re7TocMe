@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import EditForm from './Content/Formulaires/EditForm';
 import Header from './Header/Header';
-import EditForm from "./Formulaires/EditForm"
 
 function EditRecette() {
 

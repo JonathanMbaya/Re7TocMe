@@ -1,6 +1,8 @@
 import React from 'react';
+import AddForm from './Content/Formulaires/AddForm';
 import Header from './Header/Header';
-import AddForm from './Formulaires/AddForm';
+AddForm
+
 
 function AddRecette (){
 

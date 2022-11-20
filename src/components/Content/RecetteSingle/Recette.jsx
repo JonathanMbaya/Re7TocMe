@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from "react";
-import { getRecettes } from "../request";
+import { getRecettes } from "../../request";
 import RecetteSingle from "./RecetteSingle";
 import "./RecetteSingle.css"
 
@@ -60,6 +60,7 @@ function Recette () {
                     duree={recettes.tempsPreparation}/>
 
                     )}
+
 
             </div>
 

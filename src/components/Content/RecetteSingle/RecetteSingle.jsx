@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./RecetteSingle.css";
 import { Link } from 'react-router-dom';
+import PopUp from '../PopUp';
+import "../PopUp.css"
 
-function RecetteSingle ({id, titre, duree, nbrPersonnes,img, niveau}) {
+function RecetteSingle ({id, titre, index, duree, nbrPersonnes,img, niveau}) {
+
+    const [buttonPopUp , setButtonPopUp] = useState(false);
 
     return (
-        
+        <>
+
         <Link to={`${titre}/${id}`} className="nav-link">
-
-            <div key={id} id={id} className="container card-recette allresult col-md-12">
-
+            <div key={index} id={id} className="container card-recette allresult col-md-12 col-12">
 
                 <div class="container">
                     <div class="image-zoom">
-                        <img className="img-Recette image-zoom img-fluid" src={img}/>
+                        <img className="img-Recette col-12 image-zoom img-fluid" src={img}/>
                     </div>
                 </div>
 
-                <div className='col-md-6'>
+
+
+                <div className='col-md-6 col-12'>
 
                     <div className="result-titre">
                         <h3><i class="fa-solid fa-kitchen-set"></i>{titre}</h3>
@@ -51,27 +56,35 @@ function RecetteSingle ({id, titre, duree, nbrPersonnes,img, niveau}) {
 
                     </div>
 
-                    <div className="btns col-12">
-
-                        <button className='btn-btn btn-btn-edit'>     
-                            <Link to={'modifier-la recette'} className="nav-link">
-                                    <i className="fa-solid fa-pencil"></i> Modifier
-                            </Link>
-                        </button>
 
 
+    
 
+                </Link>
 
+                <div className="btns col-12">
+
+                    <button className='btn-btn btn-btn-edit'>     
                         <Link to={'modifier-la recette'} className="nav-link">
-                            <button className='btn-btn btn-btn-delete'> <i className="fa-solid fa-trash"></i> Supprimer</button>
+                                <i className="fa-solid fa-pencil"></i> Modifier
                         </Link>
+                    </button>
 
-                    </div>
+                    <button onClick={() => setButtonPopUp(true)} className='btn-btn btn-btn-delete'> <i className="fa-solid fa-trash"></i> Supprimer</button>
+
+
+                    <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
+                        <h4>Voulez vous vraiment suprimmer cette recette ?</h4>
+                    </PopUp>
+
+                </div>
 
 
 
+                </>
 
-        </Link>
+
+
 
     )
 }

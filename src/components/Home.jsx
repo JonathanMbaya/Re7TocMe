@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import AddForm from './Content/Formulaires/AddForm';
+import Recette from './Content/RecetteSingle/Recette';
 import Header from './Header/Header';
-import Recette from './Content/Recette';
 
 function Home () {
 
@@ -8,6 +9,7 @@ function Home () {
         <div>
             <Header/>
             <Recette/>
+            <AddForm/>
 
         </div>
 
